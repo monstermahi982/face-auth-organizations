@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
   emailVerify = false;
   userEmail: String= "";
   userToken: Number =  0;
-  organization: string = "626415ce0c5372b988a86d3a";
+  organization: string = "62782856d8391afd30f29635";
   imageData: string = "";
   public showWebcam = true;
   public allowCameraSwitch = true;

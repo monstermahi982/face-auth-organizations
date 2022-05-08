@@ -9,12 +9,12 @@ export class LoginService {
   constructor(private http:HttpClient) { }
 
   verifyEmailReq(data: any){
-    let url = `http://localhost:5000/login-req`;
+    let url = `https://messwala.tech/login-req`;
     return this.http.post(url, data);
   }
 
   verifyUser(data: any){
-    let url = `http://localhost:5000/login`;
+    let url = `https://messwala.tech/login`;
     return this.http.post(url, data);
   }
 
