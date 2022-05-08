@@ -22,7 +22,7 @@ function App() {
   // const [token, setToken] = useState("");
   const [alert, setAlert] = useState(false);
   const [user, setUser] = useState(false);
-  let org = "6276c5e26674d36612538ab5";
+  let org = "627829fdee0711108e45c7b5";
   const [emailVerfiy, setEmailVerify] = useState(false);
   const [alertMessage, setAlertMessage] = useState({
     message: "This is test MESSAGE",
@@ -35,7 +35,7 @@ function App() {
   const checkUserEmail = async () => {
     // console.log(textInput.current.value)
 
-    const data = await axios.post("http://localhost:5000/login-req", {
+    const data = await axios.post("https://messwala.tech/login-req", {
       email: email.current.value,
       organization: org,
     });
@@ -73,7 +73,7 @@ function App() {
     formData.append("organization", org);
     formData.append("token", token.current.value);
 
-    const data = await axios.post("http://localhost:5000/login", formData);
+    const data = await axios.post("https://messwala.tech/login", formData);
     console.log(data);
     setImage("");
     // setEmail("");
