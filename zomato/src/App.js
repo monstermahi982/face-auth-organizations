@@ -85,6 +85,7 @@ function App() {
       sessionStorage.setItem("name", data.data.name);
       sessionStorage.setItem("email", data.data.email);
       sessionStorage.setItem("phone", data.data.phone);
+      sessionStorage.setItem("image", data.data.image);
 
       setUser(true);
     } else {
@@ -99,7 +100,7 @@ function App() {
         <div className="card">
           <div className="card-image">
             <figure className="image is-4by1">
-              <img src="/zomato-bike.png" alt="Placeholder image" />
+              <img src={sessionStorage.getItem("image")} alt="Placeholder image" />
             </figure>
           </div>
           <div className="card-content">
